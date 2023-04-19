@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.flex-container{
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 80%;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.flex-items:nth-child(1){
+  margin-top: 10px;
+  font-size: 1.5rem;
+
+}
+.flex-items:nth-child(4){
+  font-size: 1.25rem;
+}
+#town{
+  padding: 12px;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#town:focus{
+  text-decoration: underline black;
+}
+#insert{
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: transparent;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+#change{
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: transparent;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+@media only screen and (max-width: 600px){
+  .flex-items:nth-child(1){
+    font-size: 1.15rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .flex-items:nth-child(4){
+    font-size: 1rem;
+  }
+}
